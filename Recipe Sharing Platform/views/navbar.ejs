@@ -1,5 +1,31 @@
+<style>
+  nav {
+    background-color: #1e1e1e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 8px;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background-color: #333;
+  }
+  /* Active Page Highlighting */
+  nav a.active {
+    background-color: #4CAF50;
+  }
+</style>
+
 <nav>
-    <a href="/recipes">Recipes</a>
+    <a href="/recipes" class="active">Recipes</a>
     <a href="/recipes/add">Add Recipe</a>
     <a href="/auth/logout">Logout</a>
-  </nav>
+</nav>
